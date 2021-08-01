@@ -10,6 +10,7 @@ none
 
 ## Preview
 
+![image](https://user-images.githubusercontent.com/72514247/127777604-115d0f7d-78a1-4c37-a849-4e8a38418863.png)
 
 ## Features
 
@@ -22,7 +23,7 @@ none
 
 ```bash
 $ python3 manage.py runserver
-
+```
 
 ## Note
 
