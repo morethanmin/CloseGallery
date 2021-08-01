@@ -365,3 +365,82 @@ body {
   padding: 5px 40px;
   border: 1px solid #979797;
 }
+
+/* service */
+
+.id-mainservice {
+  height: 460px;
+  background-image: url(https://og-data.s3.amazonaws.com/static/pages/img/service/home/Introduce_service_background_web.jpg);
+  color: white;
+}
+
+.id-mainservice-content {
+  transform: translate(25%, 25%);
+}
+.id-mainservice-content > p {
+  font-weight: 300;
+}
+
+.id-mainservice-boxcontainer {
+  display: flex;
+}
+.id-mainservice-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #696969;
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.id-mainservice-box:hover {
+  background: #222222;
+}
+
+.id-mainservice-inbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.id-mainservice-img1 {
+  width: 96px;
+  height: 96px;
+  background-position: 0px 0px;
+  background-size: 288px;
+  background-image: url(https://og-data.s3.amazonaws.com/static/pages/img/service/home/steps_sprite.png);
+}
+.id-mainservice-img2 {
+  width: 96px;
+  height: 96px;
+  background-position: 96px 0px;
+  background-size: 288px;
+  background-image: url(https://og-data.s3.amazonaws.com/static/pages/img/service/home/steps_sprite.png);
+}
+.id-mainservice-img3 {
+  width: 96px;
+  height: 96px;
+  background-position: 192px 0px;
+  background-size: 288px;
+  background-image: url(https://og-data.s3.amazonaws.com/static/pages/img/service/home/steps_sprite.png);
+}
+
+.id-mainservice-arrowimg {
+  width: 10px;
+  height: 16px;
+}
+
+.id-mainservice-title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.id-mainservice-desc {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #bbbbbb;
+}
