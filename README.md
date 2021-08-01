@@ -10,7 +10,7 @@ none
 
 ## Preview
 
-![image](https://user-images.githubusercontent.com/72514247/127777604-115d0f7d-78a1-4c37-a849-4e8a38418863.png)
+![image](https://user-images.githubusercontent.com/72514247/127777622-87e382da-d31e-4fa7-a0f1-7f3c0cb574da.png)
 
 ## Features
 
