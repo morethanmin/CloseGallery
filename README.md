@@ -4,8 +4,6 @@
 >
 > 장고를 학습하기 위해 만든 토이 프로젝트입니다.
 
-소요기간 : 2일
-
 ## Live demo
 
 none
@@ -25,6 +23,8 @@ none
 - django
 
 ## Getting started
+
+- you can check admin page using superuser (id: admin@admin.com, pw: aaabbbccc123)
 
 ```bash
 $ python3 manage.py runserver
