@@ -31,6 +31,10 @@ button {
   outline: 0;
 }
 
+.swiper-pagination-bullet-active {
+  background-color: black !important;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -66,7 +70,7 @@ button {
 
 body {
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 1fr auto;
   grid-template-columns: 100%;
   height: 100vh;
 }
@@ -132,6 +136,15 @@ body {
 }
 .base-menu-item {
   position: relative;
+}
+
+.base-right {
+  display: flex;
+  font-weight: 300;
+}
+
+.base-right > div {
+  margin-left: 10px;
 }
 
 .base-footer {
@@ -289,6 +302,56 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.id-maintheme-slide {
+  background-color: #eeeeee;
+  padding: 40px 0px !important;
+  margin-top: 30px;
+  margin-bottom: 300px;
+}
+
+.id-maintheme-slide-wrapper {
+  margin: 20px;
+}
+
+.id-maintheme-slide-img {
+  box-shadow: 7px 7px 20px 0 rgb(163 163 163 / 50%);
+}
+
+.id-maintheme-slide-wrapper > div {
+  width: fit-content !important;
+  height: 250px;
+  position: relative;
+}
+
+.id-maintheme-slide-img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.id-maintheme-tools {
+  display: flex;
+  align-items: center;
+}
+.id-maintheme-pagination {
+  margin-right: 15px;
+}
+.id-maintheme-pagination > span {
+  margin-right: 5px;
+}
+
+.id-maintheme-button-next,
+.id-maintheme-button-prev {
+  position: relative;
+  background-color: #9b9b9b;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  color: white;
+  margin-left: 15px;
 }
 
 /* maintaste */

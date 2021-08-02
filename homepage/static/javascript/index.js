@@ -22,3 +22,19 @@ $(function () {
     $('#id-mainreview-user').hide()
   })
 })
+
+var swiper = new Swiper('.id-maintheme-slide', {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: '.id-maintheme-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.id-maintheme-button-next',
+    prevEl: '.id-maintheme-button-prev',
+  },
+})
+
+console.log('swiper')
