@@ -25,6 +25,7 @@ none
 ## Getting started
 
 - you can check admin page using superuser (id: admin@admin.com, pw: aaabbbccc123)
+- admin page is "/admin"
 
 ```bash
 $ python3 manage.py runserver
