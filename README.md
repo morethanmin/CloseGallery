@@ -32,6 +32,7 @@ none
 - you can check admin page using superuser (id: admin@admin.com, pw: aaabbbccc123)
 - admin page is "/admin"
 
+- Start dev server
 ```bash
 $ python3 manage.py runserver
 ```
