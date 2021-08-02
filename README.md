@@ -18,6 +18,7 @@ none
 
 - admin page
 - login/logout
+- 다양한 상호작용
 
 ## Tech and libraries
 
