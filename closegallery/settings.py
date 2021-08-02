@@ -76,13 +76,18 @@ WSGI_APPLICATION = 'closegallery.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': { 
-        'ENGINE': 'django.db.backends.postgresql', 
-        'NAME': 'closegallery', 
-        'USER': 'jade', 
-        'PASSWORD' : 'asd123', 
-        'HOST' : 'localhost', 
-        'PORT' :'', 
+    # 배포를 위해 sqlite로 변경.
+    # 'default': { 
+    #     'ENGINE': 'django.db.backends.postgresql', 
+    #     'NAME': 'closegallery', 
+    #     'USER': 'jade', 
+    #     'PASSWORD' : 'asd123', 
+    #     'HOST' : 'localhost', 
+    #     'PORT' :'', 
+    # }
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 

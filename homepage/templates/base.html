@@ -6,11 +6,11 @@
     <meta name="keywords" content="{% block meta_keywords %}{% endblock %}" />
     <meta name="description" content="{% block meta_description %}{% endblock %}" />
     <title>{% block meta_title %}CloseGallery{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}?afte" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="{% static 'javascript/base.js'%}"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?afte" />
+
+    {% block css %}{% endblock %}
   </head>
   <body>
     <header id="base-header" class="base-header">
@@ -20,7 +20,7 @@
             <img src="https://og-data.s3.amazonaws.com/static/pages/img/service/bases/header/logo_black.svg" alt="오픈갤러리" />
           </a>
           <nav id="base-nav" class="base-nav">
-            <div><a href=""> 작품보기 </a></div>
+            <div><a href="/discover"> 작품보기 </a></div>
             <div class="base-menu-item">
               <div>이용후기</div>
               <ul class="base-submenu-content">
@@ -47,12 +47,18 @@
           </nav>
         </div>
         <div class="base-right">
+          {% if user.is_authenticated %}
           <div>
-            <a href="/login/">로그인</a>
+            <a href="/signout"> 로그아웃 </a>
+          </div>
+          {% else %}
+          <div>
+            <a href="/login"> 로그인 </a>
           </div>
           <div>
-            <a href="/signup/">회원가입</a>
+            <a href="/signup"> 회원가입 </a>
           </div>
+          {% endif %}
         </div>
       </div>
       <div id="base-submenu" class="base-submenu"></div>
@@ -81,6 +87,8 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    {% block extrahead %}{% endblock %}
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="{% static 'javascript/base.js'%}"></script>
+    {% block script %}{% endblock %}
   </body>
 </html>

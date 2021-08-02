@@ -1,0 +1,58 @@
+* {
+  font-weight: 300;
+}
+
+.lg-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lg-form {
+  max-width: 480px;
+  width: 100%;
+  border: 1px solid #dfdfdf;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.lg-form > h3 {
+  margin-bottom: 40px;
+}
+.lg-form > input {
+  margin-bottom: 15px;
+}
+.lg-form > button {
+  margin-top: 20px;
+}
+
+input {
+  appearance: none;
+  border: none;
+  padding: 5px 10px;
+  border: 1px solid #dfdfdf;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  background-color: black;
+  padding: 10px 10px;
+  color: white;
+}
+
+.lg-tip {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.lg-tip > div {
+  padding: 5px;
+}

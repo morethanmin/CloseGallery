@@ -1,0 +1,369 @@
+/* index */
+
+/* mainslide */
+
+.id-mainslide-img {
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+}
+
+.id-mainslide-caption {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)) !important;
+}
+
+.id-mainslide-caption > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.id-mainslide-caption > div > div > p {
+  color: #4a4a4a;
+}
+.id-mainslide-caption > div > button {
+  background-color: #222222;
+  color: white;
+  padding: 10px 15px;
+}
+
+.id-mainslide-btn {
+  border-radius: 50%;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.id-caption-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.id-caption-chip {
+  color: white !important;
+  font-size: 0.9rem;
+  padding: 0px 13px;
+}
+
+.id-caption-event {
+  background-color: #c3a874;
+}
+.id-caption-artwork {
+  background-color: #ff504d;
+}
+.id-caption-service {
+  background-color: #2f7032;
+}
+
+/* mainweek */
+
+.id-mainweek {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.id-mainweek-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.id-mainweek-desc > div {
+  font-weight: 300;
+}
+
+.id-mainweek-btn {
+  background-color: white;
+  border: 1px solid #979797;
+  border-radius: 22px;
+  padding: 10px 40px;
+  font-size: 0.9rem;
+}
+
+.id-mainweek-cards {
+  width: 100%;
+}
+
+.id-mainweek-card {
+  padding: 5px;
+}
+
+/* maintheme */
+
+.id-maintheme-tags {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.id-maintheme-tag {
+  background-color: #b2dd14;
+  color: white;
+  border-radius: 15px;
+  padding: 1px 7px;
+  margin-right: 15px;
+}
+
+.id-maintheme-subtag {
+  font-weight: 400;
+}
+
+.id-maintheme-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.id-maintheme-slide {
+  background-color: #eeeeee;
+  padding: 40px 0px !important;
+  margin-top: 30px;
+  margin-bottom: 300px;
+}
+
+.id-maintheme-slide-wrapper {
+  margin: 20px;
+}
+
+.id-maintheme-slide-img {
+  box-shadow: 7px 7px 20px 0 rgb(163 163 163 / 50%);
+}
+
+.id-maintheme-slide-wrapper > div {
+  width: fit-content !important;
+  height: 250px;
+  position: relative;
+}
+
+.id-maintheme-slide-img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.id-maintheme-tools {
+  display: flex;
+  align-items: center;
+}
+.id-maintheme-pagination {
+  margin-right: 15px;
+}
+.id-maintheme-pagination > span {
+  margin-right: 5px;
+}
+
+.id-maintheme-button-next,
+.id-maintheme-button-prev {
+  position: relative;
+  background-color: #9b9b9b;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  color: white;
+  margin-left: 15px;
+}
+
+/* maintaste */
+
+.id-maintaste {
+  background-color: #eaeaea;
+}
+
+.id-maintaste-box {
+  display: flex;
+}
+
+.id-maintaste-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.id-maintaste-box > img {
+  width: 750px;
+  flex-shrink: 1;
+}
+
+.id-maintaste-btn {
+  border-radius: 15px;
+  background-color: #544bf0;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  color: white;
+}
+
+/* mainreview */
+
+.id-mainreview {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: stretch;
+}
+
+.id-mainreview-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.id-mainreview-tab {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0;
+  line-height: 65px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+.id-mainreview-tabs-active {
+  border-bottom: 3px solid black;
+}
+
+.id-mainreview-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.id-mainreview-content-cards {
+  width: 100%;
+}
+.id-mainreview-desc {
+  font-weight: 300;
+}
+.id-mainreview-btn {
+  background-color: white;
+  padding: 5px 40px;
+  border: 1px solid #979797;
+}
+
+/* service */
+
+.id-mainservice {
+  height: 460px;
+  background-image: url(https://og-data.s3.amazonaws.com/static/pages/img/service/home/Introduce_service_background_web.jpg);
+  color: white;
+  margin-bottom: 160px;
+}
+
+.id-mainservice-content {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translate(25%, 25%);
+}
+.id-mainservice-content > p {
+  font-weight: 300;
+}
+
+.id-mainservice-boxcontainer {
+  display: flex;
+}
+.id-mainservice-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #696969;
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.id-mainservice-box:hover {
+  background: #222222;
+}
+
+.id-mainservice-inbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.id-mainservice-img1 {
+  width: 96px;
+  height: 96px;
+  background-position: 0px 0px;
+  background-size: 288px;
+  background-image: url(https://og-data.s3.amazonaws.com/static/pages/img/service/home/steps_sprite.png);
+}
+.id-mainservice-img2 {
+  width: 96px;
+  height: 96px;
+  background-position: 96px 0px;
+  background-size: 288px;
+  background-image: url(https://og-data.s3.amazonaws.com/static/pages/img/service/home/steps_sprite.png);
+}
+.id-mainservice-img3 {
+  width: 96px;
+  height: 96px;
+  background-position: 192px 0px;
+  background-size: 288px;
+  background-image: url(https://og-data.s3.amazonaws.com/static/pages/img/service/home/steps_sprite.png);
+}
+
+.id-mainservice-arrowimg {
+  width: 10px;
+  height: 16px;
+}
+
+.id-mainservice-title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.id-mainservice-desc {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #bbbbbb;
+}
+
+/* banner */
+
+.id-mainbanner {
+  color: white;
+  cursor: pointer;
+}
+
+.id-banner1 {
+  background-color: #3d3d3d;
+  margin-top: 30px;
+}
+.id-banner2 {
+  background-color: #988778;
+}
+.id-banner3 {
+  background-color: #3900a7;
+}
+
+.id-mainbanner > .container-section {
+  display: flex;
+  justify-content: space-between;
+}
+.id-mainbanner > .container-section > img {
+  width: 400px;
+}
+.id-mainbanner > .container-section > div {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.id-banner1 > .container-section > div {
+  align-items: flex-end;
+}
+.id-banner-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.id-banner3 > .container-section > div {
+  align-items: flex-end;
+}
