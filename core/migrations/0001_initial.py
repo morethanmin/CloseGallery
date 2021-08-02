@@ -38,7 +38,7 @@ class Migration(migrations.Migration):
             name='Weekly_painting',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('painting', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='homepage.painting')),
+                ('painting', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='core.painting')),
             ],
         ),
         migrations.CreateModel(
@@ -47,7 +47,7 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('space_name', models.CharField(max_length=32, verbose_name='공간 이름')),
                 ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
-                ('painting', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='homepage.painting')),
+                ('painting', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='core.painting')),
             ],
         ),
         migrations.CreateModel(
@@ -56,7 +56,7 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('space_name', models.CharField(max_length=32, verbose_name='공간 이름')),
                 ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
-                ('painting', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='homepage.painting')),
+                ('painting', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='core.painting')),
             ],
         ),
     ]

@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('homepage', '0002_alter_painting_thumbnail'),
+        ('core', '0002_alter_painting_thumbnail'),
     ]
 
     operations = [

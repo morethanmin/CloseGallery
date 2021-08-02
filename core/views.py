@@ -17,7 +17,7 @@ def login(request) :
     else:
       auth.login(request,user)
       return redirect('/')
-  return render(request, 'login.html')
+  return render(request, 'login/index.html')
 
 def signup(request) :
   if request.method =='POST':
@@ -26,7 +26,7 @@ def signup(request) :
 
     User.objects.create_user(username=email, password=password)
     return redirect('/login')
-  return render(request, 'signup.html')
+  return render(request, 'signup/index.html')
 
 def signout(request) :
   auth.logout(request)
@@ -34,4 +34,4 @@ def signout(request) :
   return redirect('/')
 
 def discover(request) :
-  return render(request, 'discover.html')
+  return render(request, 'discover/index.html')
