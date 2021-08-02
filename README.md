@@ -14,13 +14,18 @@ none
 
 ## Features
 
-- admin page
-- login/logout
+- 메인페이지 DB를 통해 저장된 데이터 표시(메인 슬라이드, 금주의 작품, 시즌별 작품, 이용 후기)
+- 로그인/로그아웃
 - 다양한 상호작용
+- 백오피스
 
 ## Tech and libraries
 
 - django
+- jquery
+- bootstrap
+- swiper.js
+- sqlite (postgresql을 사용하였으나, 배포를 용이하게 하고자 sqlite로 변경)
 
 ## Getting started
 
