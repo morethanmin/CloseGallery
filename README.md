@@ -4,6 +4,8 @@
 >
 > 장고를 학습하기 위해 만든 토이 프로젝트입니다.
 
+소요기간 : 2일
+
 ## Live demo
 
 none
@@ -14,6 +16,9 @@ none
 
 ## Features
 
+- admin page
+- login/logout
+- 다양한 상호작용
 
 ## Tech and libraries
 
