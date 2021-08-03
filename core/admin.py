@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.utils.safestring import mark_safe
-from .models import Painting, Review_user, Review_celebrity, Main_event_slide,Weekly_painting
+from .models import Painting, Review_user, Review_celebrity, Main_event_slide,Weekly_painting,Season_painting
 
 # Register your models here.
 
@@ -27,5 +27,6 @@ admin.site.register(Review_user)
 admin.site.register(Review_celebrity)
 admin.site.register(Main_event_slide,Main_event_slideAdmin)
 admin.site.register(Weekly_painting)
+admin.site.register(Season_painting)
 
 

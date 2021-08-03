@@ -45,5 +45,11 @@ class Weekly_painting(models.Model):
   def __str__(self):
       return self.painting.title
 
+class Season_painting(models.Model):
+  painting = models.ForeignKey(Painting, on_delete=models.CASCADE)
+  def __str__(self):
+      return self.painting.title
+
+
 
 

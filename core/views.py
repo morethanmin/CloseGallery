@@ -1,9 +1,18 @@
 from django.shortcuts import get_object_or_404, render,redirect
 from django.contrib.auth.models import User
 from django.contrib import auth
+from .models import Main_event_slide as eventModel, Weekly_painting as Weekly_painting_Model,Season_painting as Season_painting_Model,Review_user as Review_user_model, Review_celebrity as Review_celebrity_model, Painting as PaintingModel
+
 
 def home(request) :
-  return render(request, 'index.html')
+  events = eventModel.objects.filter()
+  weeklys = Weekly_painting_Model.objects.filter()
+  seasons = Season_painting_Model.objects.filter()
+  # 길이 제한 필요
+  Review_user = Review_user_model.objects.filter()
+  Review_celebrity = Review_celebrity_model.objects.filter()
+
+  return render(request, 'index.html',{"events":events,"weeklys": weeklys, "seasons":seasons,"Review_user":Review_user,"Review_celebrity":Review_celebrity})
 
 def login(request) :
   if request.method =='POST':
@@ -34,4 +43,6 @@ def signout(request) :
   return redirect('/')
 
 def discover(request) :
-  return render(request, 'discover/index.html')
+  paintings = PaintingModel.objects.filter()
+  
+  return render(request, 'discover/index.html',{"paintings":paintings})

@@ -1,49 +1,42 @@
 <div id="id-mainslide" class="carousel carousel-dark slide container" data-bs-ride="carousel">
   <div class="carousel-indicators">
-    <button class="active id-mainslide-btn" type="button" data-bs-target="#id-mainslide" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
-    <button class="id-mainslide-btn" type="button" data-bs-target="#id-mainslide" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button class="id-mainslide-btn" type="button" data-bs-target="#id-mainslide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    {% for event in events %} {% if event.pk == 1 %}
+    <button class="active id-mainslide-btn" type="button" data-bs-target="#id-mainslide" data-bs-slide-to="{{event.pk|add:"-1"}}" aria-current="true" aria-label="Slide {{event.pk}}"></button>
+    {% else %}
+    <button class="id-mainslide-btn" type="button" data-bs-target="#id-mainslide" data-bs-slide-to="{{event.pk|add:"-1"}}" aria-label="Slide {{event.pk}}"></button>
+    {% endif %} {% endfor %}
   </div>
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="id-mainslide-img" src="https://og-data.s3.amazonaws.com/media/event_banner/home/7/tablet_1627434573746.jpg" class="d-block w-100" alt="https://og-data.s3.amazonaws.com/media/event_banner/home/7/tablet_1627434573746.jpg" />
-      <div class="id-mainslide-caption carousel-caption d-none d-md-block">
-        <div>
-          <div class="id-caption-content">
-            <div class="id-caption-chip id-caption-event">EVENT</div>
-            <h2>[오늘 종료] 활인혜택이 곧 사라져요!</h2>
-            <p>지금 그림렌탈 ~80% 활인받고 부담 없이 그림 인테리어 시작해보세요</p>
-          </div>
-          <button>마감 전 클릭</button>
+  {% for event in events %} {% if event.pk == 1 %}
+  <div class="carousel-item active">
+    <img class="id-mainslide-img" src="{{event.thumbnail}}" class="d-block w-100"  />
+    <div class="id-mainslide-caption carousel-caption d-none d-md-block">
+      <div>
+        <div class="id-caption-content">
+          <div class="id-caption-chip id-caption-{{event.type|lower}}">{{event.type}}</div>
+          <h2>{{event.title}}</h2>
+          <p>{{event.comment}}</p>
         </div>
+        <button>{{event.btn_comment}}</button>
       </div>
     </div>
-    <div class="carousel-item">
-      <img class="id-mainslide-img" src="https://og-data.s3.amazonaws.com/media/event_banner/home_tablet/2/2.jpg" class="d-block w-100" alt="https://og-data.s3.amazonaws.com/media/event_banner/home_tablet/2/2.jpg" />
-      <div class="id-mainslide-caption carousel-caption d-none d-md-block">
-        <div>
-          <div class="id-caption-content">
-            <div class="id-caption-chip id-caption-artwork">ARTWORK</div>
-            <h2>3개월 마다 그림 교체, 그림렌탈 오픈갤러리</h2>
-            <p>38,109점의 작품이 당신을 기다리고 있습니다</p>
-          </div>
-          <button>작품 보기</button>
+  </div>
+  {% else %}
+  <div class="carousel-item">
+    <img class="id-mainslide-img" src="{{event.thumbnail}}" class="d-block w-100"  />
+    <div class="id-mainslide-caption carousel-caption d-none d-md-block">
+      <div>
+        <div class="id-caption-content">
+          <div class="id-caption-chip id-caption-{{event.type|lower}}">{{event.type}}</div>
+          <h2>{{event.title}}</h2>
+          <p>{{event.comment}}</p>
         </div>
+        <button>{{event.btn_comment}}</button>
       </div>
     </div>
-    <div class="carousel-item">
-      <img class="id-mainslide-img" src="https://og-data.s3.amazonaws.com/media/event_banner/home/3/web_1563347352707.jpg" class="d-block w-100" alt="https://og-data.s3.amazonaws.com/media/event_banner/home/3/web_1563347352707.jpg" />
-      <div class="id-mainslide-caption carousel-caption d-none d-md-block">
-        <div>
-          <div class="id-caption-content">
-            <div class="id-caption-chip id-caption-service">SERVICE</div>
-            <h2>그림렌탈이 궁금하다면?</h2>
-            <p>전문 큐레이터의 1:1 작품 추천으로 3개월마다 당신의 공간을 바꿔드립니다</p>
-          </div>
-          <button>더 알아보기</button>
-        </div>
-      </div>
-    </div>
+  </div>
+  {% endif %} {% endfor %}
+    
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#id-mainslide" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
