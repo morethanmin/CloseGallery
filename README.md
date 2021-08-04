@@ -13,6 +13,8 @@ none
 ## Preview
 
 ![image](https://user-images.githubusercontent.com/72514247/127777622-87e382da-d31e-4fa7-a0f1-7f3c0cb574da.png)
+![image](https://user-images.githubusercontent.com/72514247/128205648-771e63e2-8cb3-41f6-a3e7-ee22c9e759dd.png)
+
 
 ## Features
 
