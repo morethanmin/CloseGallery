@@ -25,6 +25,13 @@ none
 - 다양한 상호작용
 - 백오피스
 
+## 개발할 기능
+
+- Search paintings
+- Like/Unlike Painting
+- Celebrity Review
+- Article
+
 ## Tech and libraries
 
 - django
