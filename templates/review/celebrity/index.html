@@ -1,0 +1,11 @@
+{% extends 'base.html' %}{% load static %} {% block meta_title %} {{ block.super }}{% endblock %} {% block css %}
+<link rel="stylesheet" href="{% static 'css/review.css' %}" />
+{% endblock %} {% block script %}
+<script src="{% static 'javascript/review.js'%}?"></script>
+{% endblock %} {% block content %}
+<div rw class="container mt-5 mb-5">
+  <div class="rw-title">셀럽 인터뷰</div>
+  <div class="rw-subtitle">오픈갤러리가 제안하는 아트 스타일링, 작품으로 완성된 공간을 만나보세요</div>
+  <div id="rw-box" class="rw-box">개발중</div>
+</div>
+{% endblock %}

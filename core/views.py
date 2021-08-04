@@ -61,3 +61,15 @@ def review_user(request,pk) :
   review = get_object_or_404(Review_user_model, pk = pk)
 
   return render(request, 'review/user/_pk.html',{"review":review})
+
+
+
+def review_celebritys(request) :
+  # reviews = Review_celebrity_model.objects.filter()
+
+  return render(request, 'review/celebrity/index.html')
+
+def review_celebrity(request,pk) :
+  # review = get_object_or_404(Review_celebrity_model, pk = pk)
+
+  return render(request, 'review/celebrity/_pk.html')

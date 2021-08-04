@@ -1,0 +1,19 @@
+.rw-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.rw-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.rw-subtitle {
+  font-weight: 300;
+  color: #222222;
+  margin-bottom: 70px;
+}
