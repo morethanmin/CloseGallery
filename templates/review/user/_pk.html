@@ -1,7 +1,7 @@
-{% extends 'base/index.html' %}{% load static %} {% block meta_title %} {{ block.super }}{% endblock %} {% block css %}
+{% extends 'base.html' %}{% load static %} {% block meta_title %} {{ block.super }}{% endblock %} {% block css %}
 <link rel="stylesheet" href="{% static 'css/index.css' %}" />
 {% endblock %} {% block script %}
 <script src="{% static 'javascript/index.js'%}?"></script>
 {% endblock %} {% block content %}
-<div class="container">discover</div>
+<div class="container">{{review}}</div>
 {% endblock %}

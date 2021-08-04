@@ -1,0 +1,44 @@
+.pts-container {
+  column-count: 4;
+  column-gap: 10px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.pts-card {
+  display: inline-block;
+  border: 1px solid #dfdfdf;
+  margin-bottom: 10px;
+}
+.pts-card-title {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.pts-card-subtitle {
+  font-size: 0.8rem;
+}
+.pts-card-desc {
+  padding: 10px;
+  font-weight: 300;
+}
+.pts-img {
+  width: 100%;
+}
+
+.pt-box {
+}
+
+.pt-box > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.pt-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.pt-subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+}

@@ -1,10 +1,10 @@
-{% extends 'base/index.html' %}{% load static %} {% block meta_title %} {{ block.super }}{% endblock %} {% block css %}
+{% extends 'base.html' %}{% load static %} {% block meta_title %} {{ block.super }}{% endblock %} {% block css %}
 <link rel="stylesheet" href="{% static 'css/index.css' %}?after" />
 {% endblock %} {% block script %}
-<script src="{% static 'javascript/index.js'%}?a"></script>
+<script src="{% static 'javascript/index.js'%}?af"></script>
 {% endblock %} {% block content %}
 <div>
-  {% include "main-slide.html" %} {% include "weekly-paintings.html" %} {% include "theme.html" %} {% include "taste.html" %} {% include "review.html" %} {% include "services.html" %} {% include "banners.html" %} {% comment %}
+  {% include "@partials/home/main-slide.html" %} {% include "@partials/home/weekly-paintings.html" %} {% include "@partials/home/theme.html" %} {% include "@partials/home/taste.html" %} {% include "@partials/home/review.html" %} {% include "@partials/home/services.html" %} {% include "@partials/home/banners.html" %} {% comment %}
   <div class="container-section id-mainnews mt-5">
     <h3 class="m-3">언론보도</h3>
     <div class="mb-5">언론글</div>

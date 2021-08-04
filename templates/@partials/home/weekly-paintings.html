@@ -12,12 +12,12 @@
           {% for item in weeklys %} {% if forloop.counter < 5 %}
           <div class="square id-mainweek-paint-box col-6">
             <img class="id-mainweek-card" src="{{item.painting.thumbnail}}" />
-            <div class="content-desc id-mainweek-paint-desc">
+            <a href="/painting/{{item.painting.pk}}" class="content-desc id-mainweek-paint-desc">
               <div>
                 <h5>{{item.painting.title}}</h5>
                 <div>{{item.painting.author}}</div>
               </div>
-            </div>
+            </a>
           </div>
           {% endif %} {% endfor %}
         </div>
@@ -28,12 +28,12 @@
           {% for item in weeklys %} {% if forloop.counter == 5 %}
           <div class="square id-mainweek-paint-box col-12">
             <img class="id-mainweek-card" src="{{item.painting.thumbnail}}" />
-            <div class="content-desc id-mainweek-paint-desc">
+            <a href="/painting/{{item.painting.pk}}" class="content-desc id-mainweek-paint-desc">
               <div>
                 <h5>{{item.painting.title}}</h5>
                 <div>{{item.painting.author}}</div>
               </div>
-            </div>
+            </a>
           </div>
           {% endif %} {% endfor %}
         </div>
@@ -47,22 +47,22 @@
           {% for item in weeklys %} {% if forloop.counter > 5 %}{% if forloop.counter < 13 %} {% if forloop.counter == 8 %}
           <div class="square id-mainweek-paint-box col-12">
             <img class="id-mainweek-card" src="{{item.painting.thumbnail}}" />
-            <div class="content-desc id-mainweek-paint-desc">
+            <a href="/painting/{{item.painting.pk}}" class="content-desc id-mainweek-paint-desc">
               <div>
                 <h5>{{item.painting.title}}</h5>
                 <div>{{item.painting.author}}</div>
               </div>
-            </div>
+            </a>
           </div>
           {% else %}
           <div class="square id-mainweek-paint-box col-6">
             <img class="id-mainweek-card" src="{{item.painting.thumbnail}}" />
-            <div class="content-desc id-mainweek-paint-desc">
+            <a href="/painting/{{item.painting.pk}}" class="content-desc id-mainweek-paint-desc">
               <div>
                 <h5>{{item.painting.title}}</h5>
                 <div>{{item.painting.author}}</div>
               </div>
-            </div>
+            </a>
           </div>
           {% endif %} {% endif %}{% endif %} {% endfor %}
         </div>
@@ -73,22 +73,22 @@
           {% for item in weeklys %} {% if forloop.counter > 12 %}{% if forloop.counter < 20 %} {% if forloop.counter == 17 %}
           <div class="square id-mainweek-paint-box col-12">
             <img class="id-mainweek-card" src="{{item.painting.thumbnail}}" />
-            <div class="content-desc id-mainweek-paint-desc">
+            <a href="/painting/{{item.painting.pk}}" class="content-desc id-mainweek-paint-desc">
               <div>
                 <h5>{{item.painting.title}}</h5>
                 <div>{{item.painting.author}}</div>
               </div>
-            </div>
+            </a>
           </div>
           {% else %}
           <div class="square id-mainweek-paint-box col-6">
             <img class="id-mainweek-card" src="{{item.painting.thumbnail}}" />
-            <div class="content-desc id-mainweek-paint-desc">
+            <a href="/painting/{{item.painting.pk}}" class="content-desc id-mainweek-paint-desc">
               <div>
                 <h5>{{item.painting.title}}</h5>
                 <div>{{item.painting.author}}</div>
               </div>
-            </div>
+            </a>
           </div>
           {% endif %} {% endif %}{% endif %} {% endfor %}
         </div>

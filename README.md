@@ -35,6 +35,7 @@ none
 - admin page is "/admin"
 
 - Start dev server
+
 ```bash
 $ python3 manage.py runserver
 ```

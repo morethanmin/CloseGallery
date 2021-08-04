@@ -6,7 +6,7 @@ $(function () {
     $('#id-mainweek-extendcard').show()
 
     if ($('#id-mainweek-btn').text() === '+ 더보기') $('#id-mainweek-btn').text('더 많은 작품 보기')
-    else window.location.replace('/discover/')
+    else window.location.replace('/painting/')
   })
 
   $('#id-mainreview-tab-user').click(function () {

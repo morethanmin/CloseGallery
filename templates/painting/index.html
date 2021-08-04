@@ -1,0 +1,17 @@
+{% extends 'base.html' %}{% load static %} {% block meta_title %} {{ block.super }}{% endblock %} {% block css %}
+<link rel="stylesheet" href="{% static 'css/paintings.css' %}?" />
+{% endblock %} {% block script %}
+<script src="{% static 'javascript/painting.js'%}?"></script>
+{% endblock %} {% block content %}
+<div id="pts-container" class="container pts-container mt-5 mb-5">
+  {% for item in paintings %}
+  <a href="/painting/{{item.pk}}" class="pts-card">
+    <img class="pts-img" src="{{item.thumbnail}}" />
+    <div class="pts-card-desc">
+      <div class="pts-card-title">{{item.title}}</div>
+      <div class="pts-card-subtitle">{{item.author}}</div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}

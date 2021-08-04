@@ -16,7 +16,7 @@
   <div class="swiper-container id-maintheme-slide">
     <div class="swiper-wrapper id-maintheme-slide-wrapper">
       {% for item in seasons %}
-      <div class="swiper-slide">
+      <a href="/painting/{{item.painting.pk}}" class="swiper-slide id-maintheme-slide-item">
         <img class="id-maintheme-slide-img" src="{{item.painting.thumbnail}}" />
         <div class="id-maintheme-desc">
           <div>
@@ -24,7 +24,7 @@
             <div>{{item.painting.author}}</div>
           </div>
         </div>
-      </div>
+      </a>
       {% endfor %}
     </div>
   </div>

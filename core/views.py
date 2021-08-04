@@ -26,7 +26,7 @@ def login(request) :
     else:
       auth.login(request,user)
       return redirect('/')
-  return render(request, 'login/index.html')
+  return render(request, 'login.html')
 
 def signup(request) :
   if request.method =='POST':
@@ -35,14 +35,29 @@ def signup(request) :
 
     User.objects.create_user(username=email, password=password)
     return redirect('/login')
-  return render(request, 'signup/index.html')
+  return render(request, 'signup.html')
 
 def signout(request) :
   auth.logout(request)
 
   return redirect('/')
 
-def discover(request) :
+def paintings(request) :
   paintings = PaintingModel.objects.filter()
   
-  return render(request, 'discover/index.html',{"paintings":paintings})
+  return render(request, 'painting/index.html',{"paintings":paintings})
+
+def painting(request,pk) :
+  painting = get_object_or_404(PaintingModel, pk = pk)
+
+  return render(request, 'painting/_pk.html',{"painting":painting})
+
+def review_users(request) :
+  reviews = Review_user_model.objects.filter()
+
+  return render(request, 'review/user/index.html',{"reviews":reviews})
+
+def review_user(request,pk) :
+  review = get_object_or_404(Review_user_model, pk = pk)
+
+  return render(request, 'review/user/_pk.html',{"review":review})

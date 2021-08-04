@@ -16,7 +16,7 @@ $(function () {
     }
   )
   $(window).scroll(function (event) {
-    var st = $(this).scrollTop()
+    let st = $(this).scrollTop()
     if (st > lastScroll && st > 60) {
       $('#base-header').hide()
     } else {

@@ -12,6 +12,11 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black !important;
+}
+
 a:link {
   color: black;
   text-decoration: none;
@@ -40,9 +45,16 @@ button {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 .container-section {
+  position: relative;
   max-width: 1000px;
+  margin: 0 auto;
+}
+.container-content {
+  position: relative;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -81,7 +93,10 @@ button {
 
   width: 100%;
   height: 100%;
-  cursor: default;
+  cursor: pointer;
+}
+.content-desc:hover {
+  color: white !important;
 }
 .content-desc > div > div {
   font-weight: 300;

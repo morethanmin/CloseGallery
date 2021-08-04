@@ -1,0 +1,13 @@
+{% extends 'base.html' %}{% load static %} {% block meta_title %} {{ block.super }}{% endblock %} {% block css %}
+<link rel="stylesheet" href="{% static 'css/paintings.css' %}?after" />
+{% endblock %} {% block script %}
+<script src="{% static 'javascript/index.js'%}?"></script>
+{% endblock %} {% block content %}
+<div class="container-content pt-box mt-5 mb-5">
+  <div class="">
+    <div class="pt-title">{{painting.title}}</div>
+    <div class="pt-subtitle mb-2">{{painting.author}}</div>
+  </div>
+  <img src="{{painting.thumbnail}}" />
+</div>
+{% endblock %}
