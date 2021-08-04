@@ -1,7 +1,7 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
-/* common */
+/* initialize */
 
 * {
   margin: 0px;
@@ -35,6 +35,8 @@ button {
   background-color: black !important;
 }
 
+/* common */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -64,6 +66,32 @@ button {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.content-desc {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: absolute !important;
+  top: 0px;
+  opacity: 0;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+.content-desc > div > div {
+  font-weight: 300;
+}
+
+.content-desc > div > * {
+  text-align: center;
+}
+.content-desc:hover {
+  opacity: 1;
 }
 
 /* layout */

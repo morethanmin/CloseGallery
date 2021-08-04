@@ -1,13 +1,13 @@
 <div id="id-mainslide" class="carousel carousel-dark slide container" data-bs-ride="carousel">
   <div class="carousel-indicators">
-    {% for event in events %} {% if event.pk == 1 %}
+    {% for event in events %} {% if forloop.counter == 1 %}
     <button class="active id-mainslide-btn" type="button" data-bs-target="#id-mainslide" data-bs-slide-to="{{event.pk|add:"-1"}}" aria-current="true" aria-label="Slide {{event.pk}}"></button>
     {% else %}
     <button class="id-mainslide-btn" type="button" data-bs-target="#id-mainslide" data-bs-slide-to="{{event.pk|add:"-1"}}" aria-label="Slide {{event.pk}}"></button>
     {% endif %} {% endfor %}
   </div>
   <div class="carousel-inner">
-  {% for event in events %} {% if event.pk == 1 %}
+  {% for event in events %} {% if forloop.counter == 1 %}
   <div class="carousel-item active">
     <img class="id-mainslide-img" src="{{event.thumbnail}}" class="d-block w-100"  />
     <div class="id-mainslide-caption carousel-caption d-none d-md-block">

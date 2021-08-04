@@ -15,33 +15,17 @@
   </div>
   <div class="swiper-container id-maintheme-slide">
     <div class="swiper-wrapper id-maintheme-slide-wrapper">
+      {% for item in seasons %}
       <div class="swiper-slide">
-        <img class="id-maintheme-slide-img" src="https://unsplash.com/photos/7RQf2X6aXXI/download?force=true&w=1920" />
+        <img class="id-maintheme-slide-img" src="{{item.painting.thumbnail}}" />
+        <div class="id-maintheme-desc">
+          <div>
+            <div>{{item.painting.title}}</div>
+            <div>{{item.painting.author}}</div>
+          </div>
+        </div>
       </div>
-      <div class="swiper-slide">
-        <img class="id-maintheme-slide-img" src="https://unsplash.com/photos/p3F-1M6du6U/download?force=true&w=1920" />
-      </div>
-      <div class="swiper-slide">
-        <img class="id-maintheme-slide-img" src="https://unsplash.com/photos/7XAM0J3dNQM/download?force=true&w=1920" />
-      </div>
-      <div class="swiper-slide">
-        <img class="id-maintheme-slide-img" src="https://unsplash.com/photos/iSwzfjgD3uU/download?force=true&w=1920" />
-      </div>
-      <div class="swiper-slide">
-        <img class="id-maintheme-slide-img" src="https://unsplash.com/photos/_MdUz-1Ofsg/download?force=true&w=1920" />
-      </div>
-      <div class="swiper-slide">
-        <img class="id-maintheme-slide-img" src="https://unsplash.com/photos/Xh6BpT-1tXo/download?force=true&w=1920" />
-      </div>
-      <div class="swiper-slide">
-        <img class="id-maintheme-slide-img" src="https://unsplash.com/photos/jcLcWL8D7AQ/download?force=true&w=1920" />
-      </div>
-      <div class="swiper-slide">
-        <img class="id-maintheme-slide-img" src="https://unsplash.com/photos/C9XgrB8hqBI/download?force=true" />
-      </div>
-      <div class="swiper-slide">
-        <img class="id-maintheme-slide-img" src="https://unsplash.com/photos/55MySYrKf5w/download?force=true&w=1920" />
-      </div>
+      {% endfor %}
     </div>
   </div>
 </div>

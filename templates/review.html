@@ -7,14 +7,17 @@
     <div class="id-mainreview-desc">그림으로 변화된 공간,</div>
     <div class="id-mainreview-desc">고객의 다양한 이용후기를 확인해보세요</div>
     <div class="id-mainreview-content-cards row mt-4">
-      <div class="square col-3"><img src="https://unsplash.com/photos/uGWNcejbf2E/download?force=true&w=1920" /></div>
-      <div class="square col-3"><img src="https://unsplash.com/photos/YI2YkyaREHk/download?force=true&w=1920" /></div>
-      <div class="square col-3"><img src="https://unsplash.com/photos/wot0Q5sg91E/download?force=true&w=1920" /></div>
-      <div class="square col-3"><img src="https://unsplash.com/photos/YdomJdFdbDo/download?force=true&w=1920" /></div>
-      <div class="square col-3"><img src="https://unsplash.com/photos/RqO6kwm4tZY/download?force=true&w=1920" /></div>
-      <div class="square col-3"><img src="https://unsplash.com/photos/wDDfbanbhl8/download?force=true&w=1920" /></div>
-      <div class="square col-3"><img src="https://unsplash.com/photos/3z_61bnbFhM/download?force=true&w=1920" /></div>
-      <div class="square col-3"><img src="https://unsplash.com/photos/THR4LzUUUYA/download?force=true&w=1920" /></div>
+      {% for item in Review_users %}
+      <div class="square col-3">
+        <img src="{{item.thumbnail}}" />
+        <div class="content-desc">
+          <div>
+            <div>{{item.reviewer.username}}님의</div>
+            <div>{{item.space_name}} 공간</div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
     </div>
   </div>
   <div id="id-mainreview-celebrity" class="id-mainreview-content id-mainreview-celebrity">

@@ -7,41 +7,90 @@
   <div class="container-section id-mainweek-cards mb-5">
     <div class="row">
       <div class="square col-6">
+        {% comment %} 1~4 {% endcomment %}
         <div class="row">
-          <div class="square col-6"><img class="id-mainweek-card" src="https://unsplash.com/photos/woMD-vhzOHI/download?force=true&w=1920" /></div>
-          <div class="square col-6"><img class="id-mainweek-card" src="https://unsplash.com/photos/uNQojVg3BO0/download?force=true&w=1920" /></div>
-          <div class="square col-6"><img class="id-mainweek-card" src="https://unsplash.com/photos/5TK1F5VfdIk/download?force=true&w=1920" /></div>
-          <div class="square col-6"><img class="id-mainweek-card" src="https://unsplash.com/photos/t2Sai-AqIpI/download?force=true&w=1920" /></div>
+          {% for item in weeklys %} {% if forloop.counter < 5 %}
+          <div class="square id-mainweek-paint-box col-6">
+            <img class="id-mainweek-card" src="{{item.painting.thumbnail}}" />
+            <div class="content-desc id-mainweek-paint-desc">
+              <div>
+                <h5>{{item.painting.title}}</h5>
+                <div>{{item.painting.author}}</div>
+              </div>
+            </div>
+          </div>
+          {% endif %} {% endfor %}
         </div>
       </div>
       <div class="col-6">
+        {% comment %} 5 {% endcomment %}
         <div class="row">
-          <div class="square col-12"><img class="id-mainweek-card" src="https://unsplash.com/photos/5MTf9XyVVgM/download?force=true&w=1920" /></div>
+          {% for item in weeklys %} {% if forloop.counter == 5 %}
+          <div class="square id-mainweek-paint-box col-12">
+            <img class="id-mainweek-card" src="{{item.painting.thumbnail}}" />
+            <div class="content-desc id-mainweek-paint-desc">
+              <div>
+                <h5>{{item.painting.title}}</h5>
+                <div>{{item.painting.author}}</div>
+              </div>
+            </div>
+          </div>
+          {% endif %} {% endfor %}
         </div>
       </div>
     </div>
 
     <div id="id-mainweek-extendcard" class="row">
       <div class="col-6">
+        {% comment %} 6~12 {% endcomment %}
         <div class="row">
-          <div class="square col-6"><img class="id-mainweek-card" src="https://unsplash.com/photos/6RuNmpIio4U/download?force=true&w=1920" /></div>
-          <div class="square col-6"><img class="id-mainweek-card" src="https://unsplash.com/photos/6RuNmpIio4U/download?force=true&w=1920" /></div>
-          <div class="square col-12"><img class="id-mainweek-card" src="https://unsplash.com/photos/6RuNmpIio4U/download?force=true&w=1920" /></div>
-          <div class="square col-6"><img class="id-mainweek-card" src="https://unsplash.com/photos/6RuNmpIio4U/download?force=true&w=1920" /></div>
-          <div class="square col-6"><img class="id-mainweek-card" src="https://unsplash.com/photos/6RuNmpIio4U/download?force=true&w=1920" /></div>
-          <div class="square col-6"><img class="id-mainweek-card" src="https://unsplash.com/photos/6RuNmpIio4U/download?force=true&w=1920" /></div>
-          <div class="square col-6"><img class="id-mainweek-card" src="https://unsplash.com/photos/6RuNmpIio4U/download?force=true&w=1920" /></div>
+          {% for item in weeklys %} {% if forloop.counter > 5 %}{% if forloop.counter < 13 %} {% if forloop.counter == 8 %}
+          <div class="square id-mainweek-paint-box col-12">
+            <img class="id-mainweek-card" src="{{item.painting.thumbnail}}" />
+            <div class="content-desc id-mainweek-paint-desc">
+              <div>
+                <h5>{{item.painting.title}}</h5>
+                <div>{{item.painting.author}}</div>
+              </div>
+            </div>
+          </div>
+          {% else %}
+          <div class="square id-mainweek-paint-box col-6">
+            <img class="id-mainweek-card" src="{{item.painting.thumbnail}}" />
+            <div class="content-desc id-mainweek-paint-desc">
+              <div>
+                <h5>{{item.painting.title}}</h5>
+                <div>{{item.painting.author}}</div>
+              </div>
+            </div>
+          </div>
+          {% endif %} {% endif %}{% endif %} {% endfor %}
         </div>
       </div>
       <div class="col-6">
+        {% comment %} 13~19 {% endcomment %}
         <div class="row">
-          <div class="square col-6"><img class="id-mainweek-card" src="https://unsplash.com/photos/6RuNmpIio4U/download?force=true&w=1920" /></div>
-          <div class="square col-6"><img class="id-mainweek-card" src="https://unsplash.com/photos/6RuNmpIio4U/download?force=true&w=1920" /></div>
-          <div class="square col-6"><img class="id-mainweek-card" src="https://unsplash.com/photos/6RuNmpIio4U/download?force=true&w=1920" /></div>
-          <div class="square col-6"><img class="id-mainweek-card" src="https://unsplash.com/photos/6RuNmpIio4U/download?force=true&w=1920" /></div>
-          <div class="square col-12"><img class="id-mainweek-card" src="https://unsplash.com/photos/6RuNmpIio4U/download?force=true&w=1920" /></div>
-          <div class="square col-6"><img class="id-mainweek-card" src="https://unsplash.com/photos/6RuNmpIio4U/download?force=true&w=1920" /></div>
-          <div class="square col-6"><img class="id-mainweek-card" src="https://unsplash.com/photos/6RuNmpIio4U/download?force=true&w=1920" /></div>
+          {% for item in weeklys %} {% if forloop.counter > 12 %}{% if forloop.counter < 20 %} {% if forloop.counter == 17 %}
+          <div class="square id-mainweek-paint-box col-12">
+            <img class="id-mainweek-card" src="{{item.painting.thumbnail}}" />
+            <div class="content-desc id-mainweek-paint-desc">
+              <div>
+                <h5>{{item.painting.title}}</h5>
+                <div>{{item.painting.author}}</div>
+              </div>
+            </div>
+          </div>
+          {% else %}
+          <div class="square id-mainweek-paint-box col-6">
+            <img class="id-mainweek-card" src="{{item.painting.thumbnail}}" />
+            <div class="content-desc id-mainweek-paint-desc">
+              <div>
+                <h5>{{item.painting.title}}</h5>
+                <div>{{item.painting.author}}</div>
+              </div>
+            </div>
+          </div>
+          {% endif %} {% endif %}{% endif %} {% endfor %}
         </div>
       </div>
     </div>

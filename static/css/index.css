@@ -68,9 +68,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.id-mainweek-desc > div {
-  font-weight: 300;
+  text-align: center;
 }
 
 .id-mainweek-btn {
@@ -87,6 +85,12 @@
 
 .id-mainweek-card {
   padding: 5px;
+}
+
+.id-mainweek-paint-desc {
+  width: calc(100% - 10px) !important;
+  height: calc(100% - 10px) !important;
+  margin: 5px;
 }
 
 /* maintheme */
@@ -118,6 +122,7 @@
 .id-maintheme-slide {
   background-color: #eeeeee;
   padding: 40px 0px !important;
+  padding-bottom: 60px !important;
   margin-top: 30px;
   margin-bottom: 300px;
 }
@@ -163,6 +168,21 @@
   height: 40px;
   color: white;
   margin-left: 15px;
+}
+
+.id-maintheme-desc {
+  position: relative;
+  margin-top: 20px;
+}
+.id-maintheme-desc > div {
+}
+
+.id-maintheme-desc > div > * {
+  text-align: center;
+  font-size: 0.9rem;
+}
+.id-maintheme-desc > div > div {
+  font-weight: 300;
 }
 
 /* maintaste */

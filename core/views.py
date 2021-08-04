@@ -9,10 +9,10 @@ def home(request) :
   weeklys = Weekly_painting_Model.objects.filter()
   seasons = Season_painting_Model.objects.filter()
   # 길이 제한 필요
-  Review_user = Review_user_model.objects.filter()
-  Review_celebrity = Review_celebrity_model.objects.filter()
+  Review_users = Review_user_model.objects.filter()
+  Review_celebritys = Review_celebrity_model.objects.filter()
 
-  return render(request, 'index.html',{"events":events,"weeklys": weeklys, "seasons":seasons,"Review_user":Review_user,"Review_celebrity":Review_celebrity})
+  return render(request, 'index.html',{"events":events,"weeklys": weeklys, "seasons":seasons,"Review_users":Review_users,"Review_celebritys":Review_celebritys})
 
 def login(request) :
   if request.method =='POST':

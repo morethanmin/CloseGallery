@@ -1,7 +1,7 @@
 {% extends 'base/index.html' %}{% load static %} {% block meta_title %} {{ block.super }}{% endblock %} {% block css %}
-<link rel="stylesheet" href="{% static 'css/index.css' %}" />
+<link rel="stylesheet" href="{% static 'css/index.css' %}?after" />
 {% endblock %} {% block script %}
-<script src="{% static 'javascript/index.js'%}?"></script>
+<script src="{% static 'javascript/index.js'%}?a"></script>
 {% endblock %} {% block content %}
 <div>
   {% include "main-slide.html" %} {% include "weekly-paintings.html" %} {% include "theme.html" %} {% include "taste.html" %} {% include "review.html" %} {% include "services.html" %} {% include "banners.html" %} {% comment %}
