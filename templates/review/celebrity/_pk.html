@@ -3,5 +3,11 @@
 {% endblock %} {% block script %}
 <script src="{% static 'javascript/index.js'%}?"></script>
 {% endblock %} {% block content %}
-<div class="container-content pt-box mt-5 mb-5">개발중</div>
+<div class="container-content pt-box mt-5 mb-5">
+  <div class="">
+    <div class="pt-title">{{review.space_name}} 공간</div>
+    <div class="pt-subtitle mb-2">{{review.reviewer.username}}</div>
+  </div>
+  <img src="{{review.thumbnail}}" />
+</div>
 {% endblock %}

@@ -65,11 +65,11 @@ def review_user(request,pk) :
 
 
 def review_celebritys(request) :
-  # reviews = Review_celebrity_model.objects.filter()
+  reviews = Review_celebrity_model.objects.filter()
 
-  return render(request, 'review/celebrity/index.html')
+  return render(request, 'review/celebrity/index.html',{"reviews":reviews})
 
 def review_celebrity(request,pk) :
-  # review = get_object_or_404(Review_celebrity_model, pk = pk)
+  review = get_object_or_404(Review_celebrity_model, pk = pk)
 
-  return render(request, 'review/celebrity/_pk.html')
+  return render(request, 'review/celebrity/_pk.html',{"review":review})

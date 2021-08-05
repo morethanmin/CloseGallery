@@ -21,7 +21,8 @@ class Review_user(models.Model):
 
 
 class Review_celebrity(models.Model):
-  space_name = models.CharField('공간 이름', max_length=32)
+  title = models.CharField('제목', max_length=32)
+  space_name = models.CharField('장소', max_length=32)
   thumbnail = models.CharField('공간 사진',max_length=300)
   painting = models.ForeignKey(Painting, on_delete=models.CASCADE)
   reviewer = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)

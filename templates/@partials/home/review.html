@@ -23,8 +23,38 @@
   <div id="id-mainreview-celebrity" class="id-mainreview-content id-mainreview-celebrity">
     <div class="id-mainreview-desc">오픈갤러리가 제안하는 아트스타일링,</div>
     <div class="id-mainreview-desc">작품으로 공간을 새롭게 완성해보세요</div>
+    <div class="swiper-container id-mainreview-slide mt-4">
+      <div class="id-mainreview-tools">
+        <div class="id-mainreview-pagination mb-5"></div>
+        {% for item in Review_celebritys %}
+        <div id="id-mainreview-slide-desc-{{forloop.counter}}" class="id-mainreview-slide-desc">
+          <div>
+            <div class="id-mainreview-slide-desc-open">OPEN HOUSE #{{forloop.counter}}</div>
+            <div class="id-mainreview-slide-desc-title">{{item.title}}</div>
+          </div>
+          <div>
+            <div class="d-flex">
+              <div class="id-mainreview-slide-desc-name">장소</div>
+              <div class="id-mainreview-slide-desc-subname">{{item.space_name}}</div>
+            </div>
+            <div class="d-flex">
+              <div class="id-mainreview-slide-desc-name">작가</div>
+              <div class="id-mainreview-slide-desc-subname">{{item.painting.author}}</div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="swiper-wrapper id-mainreview-slide-wrapper">
+        {% for item in Review_celebritys %}
+        <a href="/review/celebrity/{{item.pk}}" class="swiper-slide id-mainreview-slide-item">
+          <img class="id-mainreview-slide-img" src="{{item.thumbnail}}" />
+        </a>
+        {% endfor %}
+      </div>
+    </div>
   </div>
   <div class="m-5 d-flex justify-content-center">
-    <a href="/review/user" class="id-mainreview-btn">전체 보기</a>
+    <a id="id-mainreview-btn" href="/review/user" class="id-mainreview-btn">전체 보기</a>
   </div>
 </div>

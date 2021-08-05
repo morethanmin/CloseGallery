@@ -6,6 +6,18 @@
 <div rw class="container mt-5 mb-5">
   <div class="rw-title">셀럽 인터뷰</div>
   <div class="rw-subtitle">오픈갤러리가 제안하는 아트 스타일링, 작품으로 완성된 공간을 만나보세요</div>
-  <div id="rw-box" class="rw-box">개발중</div>
+  <div id="rw-box" class="rw-box">
+    {% for item in reviews %}
+    <div class="square col-3">
+      <img id="rw-img" src="{{item.thumbnail}}" />
+      <a href="/review/celebrity/{{item.pk}}" class="content-desc">
+        <div>
+          <div>{{item.reviewer.username}}님의</div>
+          <div>{{item.space_name}} 공간</div>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
 </div>
 {% endblock %}

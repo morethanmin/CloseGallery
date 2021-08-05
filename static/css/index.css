@@ -265,6 +265,65 @@
   cursor: pointer;
 }
 
+.id-mainreview-slide {
+  position: relative;
+  width: 100%;
+  height: 478px;
+}
+.id-mainreview-tools {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 340px;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 10;
+  padding: 30px;
+}
+.id-mainreview-tools:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.id-mainreview-slide-img {
+  width: 100%;
+}
+
+.id-mainreview-pagination > span {
+  width: 10px !important;
+  height: 10px !important;
+  margin-right: 15px;
+  background-color: white !important;
+}
+
+.id-mainreview-slide-desc {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 72px);
+  font-weight: 300;
+}
+
+.id-mainreview-slide-desc-open {
+  border-bottom: 1px solid white;
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.id-mainreview-slide-desc-title {
+  font-size: 1.8rem;
+}
+
+.id-mainreview-slide-desc-name {
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-right: 10px;
+}
+.id-mainreview-slide-desc-subname {
+  font-size: 1.1rem;
+}
 /* service */
 
 .id-mainservice {
