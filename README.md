@@ -13,13 +13,24 @@ none
 ## Preview
 
 ![image](https://user-images.githubusercontent.com/72514247/127777622-87e382da-d31e-4fa7-a0f1-7f3c0cb574da.png)
+![image](https://user-images.githubusercontent.com/72514247/128205648-771e63e2-8cb3-41f6-a3e7-ee22c9e759dd.png)
+
 
 ## Features
 
-- 메인페이지 DB를 통해 저장된 데이터 표시(메인 슬라이드, 금주의 작품, 시즌별 작품, 이용 후기)
+- 메인페이지
+- 작품 소개
+- 일반 리뷰
 - 로그인/로그아웃
 - 다양한 상호작용
 - 백오피스
+
+## 개발할 기능
+
+- Search paintings
+- Like/Unlike Painting
+- Celebrity Review
+- Article
 
 ## Tech and libraries
 
