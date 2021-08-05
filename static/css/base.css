@@ -229,3 +229,7 @@ body {
 .base-main {
   padding-top: 60px;
 }
+
+.base-left-header {
+  width: 140px;
+}
