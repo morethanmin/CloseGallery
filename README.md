@@ -20,7 +20,7 @@ none
 
 - 메인페이지
 - 작품 소개
-- 일반 리뷰
+- 일반 리뷰, 셀럽 리뷰
 - 로그인/로그아웃
 - 다양한 상호작용
 - 백오피스
@@ -29,7 +29,6 @@ none
 
 - Search paintings
 - Like/Unlike Painting
-- Celebrity Review
 - Article
 
 ## Tech and libraries
