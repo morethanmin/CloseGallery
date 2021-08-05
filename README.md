@@ -50,7 +50,7 @@ none
 $ python3 manage.py runserver
 ```
 
-- open internet http://localhost:8000/
+- open http://localhost:8000/
 
 ## Note
 
