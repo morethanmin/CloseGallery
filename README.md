@@ -8,7 +8,7 @@
 
 ## Live demo
 
-you can check demo [here](http://34.64.78.27:8000/)
+you can check demo [here](http://34.64.167.215:8000/)
 
 ## Preview
 
